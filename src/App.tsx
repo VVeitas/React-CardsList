@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { CardList } from './components/card-list/card.list';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+type AppState = {
+  people: { name: string; age: number; id: number }[];
+};
+
+export class App extends React.Component {
+  state: AppState = {
+    people: [
+      { name: 'Josh', age: 4, id: 0 },
+      { name: 'Marry', age: 25, id: 1 },
+      { name: 'John', age: 14, id: 2 },
+      { name: 'Kobe', age: 66, id: 3 },
+      { name: 'Luke', age: 33, id: 4 },
+      { name: 'Quentin', age: 33, id: 5 },
+      { name: 'David', age: 33, id: 6 },
+      { name: 'Margaret', age: 33, id: 7 },
+    ],
+  };
+
+  render() {
+    return (
+      <div className='App'>
+        <CardList people={this.state.people}></CardList>
+      </div>
+    );
+  }
 }
 
 export default App;
