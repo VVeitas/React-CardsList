@@ -1,8 +1,11 @@
 import React from 'react';
 import { CardList } from './components/card-list/card.list';
+import './App.css';
+import { SearchBox } from './components/search-box/search-box';
 
 type AppState = {
   people: { name: string; age: number; id: number }[];
+  searchField: string;
 };
 
 export class App extends React.Component {
@@ -17,12 +20,24 @@ export class App extends React.Component {
       { name: 'David', age: 33, id: 6 },
       { name: 'Margaret', age: 33, id: 7 },
     ],
+    searchField: '',
   };
 
   render() {
+    const { people, searchField } = this.state;
+    const filteredPeople = people.filter(person =>
+      person.name.toLowerCase().includes(searchField.toLowerCase())
+    );
     return (
       <div className='App'>
-        <CardList people={this.state.people}></CardList>
+        <h1> People </h1>
+        <SearchBox
+          placeholder='search person'
+          handleChange={(e: { target: { value: any } }) => {
+            this.setState({ searchField: e.target.value });
+          }}
+        />
+        <CardList people={filteredPeople} />
       </div>
     );
   }

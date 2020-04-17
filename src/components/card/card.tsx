@@ -9,8 +9,8 @@ export const Card: React.FC<CardListProp> = props => (
   <div className='card-container'>
     <img
       alt='person'
-      src={`https://robohash.org/${props.person.id}?set=set2`}
+      src={`https://robohash.org/${props.person.id}?set=set2size=180x180`}
     />
-    <h1> {props.person.name}</h1>
+    <h2> {props.person.name}</h2>
   </div>
 );
