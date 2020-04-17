@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/typescript-cardslist/static/css/main.79b919ab.chunk.css",
+    "main.js": "/typescript-cardslist/static/js/main.b48f884b.chunk.js",
+    "main.js.map": "/typescript-cardslist/static/js/main.b48f884b.chunk.js.map",
+    "runtime-main.js": "/typescript-cardslist/static/js/runtime-main.48fd3efc.js",
+    "runtime-main.js.map": "/typescript-cardslist/static/js/runtime-main.48fd3efc.js.map",
+    "static/js/2.706c926f.chunk.js": "/typescript-cardslist/static/js/2.706c926f.chunk.js",
+    "static/js/2.706c926f.chunk.js.map": "/typescript-cardslist/static/js/2.706c926f.chunk.js.map",
+    "index.html": "/typescript-cardslist/index.html",
+    "precache-manifest.40778dcec0bae13202bed3b9e48b5a35.js": "/typescript-cardslist/precache-manifest.40778dcec0bae13202bed3b9e48b5a35.js",
+    "service-worker.js": "/typescript-cardslist/service-worker.js",
+    "static/css/main.79b919ab.chunk.css.map": "/typescript-cardslist/static/css/main.79b919ab.chunk.css.map",
+    "static/js/2.706c926f.chunk.js.LICENSE.txt": "/typescript-cardslist/static/js/2.706c926f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.48fd3efc.js",
+    "static/js/2.706c926f.chunk.js",
+    "static/css/main.79b919ab.chunk.css",
+    "static/js/main.b48f884b.chunk.js"
+  ]
+}
